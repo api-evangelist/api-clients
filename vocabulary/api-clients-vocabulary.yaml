@@ -1,0 +1,306 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: API Clients
+  description: Vocabulary for the API clients topic, covering desktop, web, and command-line tools used to inspect, debug, exercise, and document HTTP, GraphQL, gRPC, and WebSocket APIs.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: Postman
+      namespace: postman
+      status: active
+    - name: Insomnia
+      namespace: insomnia
+      status: active
+    - name: Bruno
+      namespace: bruno
+      status: active
+    - name: Hoppscotch
+      namespace: hoppscotch
+      status: active
+    - name: HTTPie
+      namespace: httpie
+      status: active
+    - name: Paw
+      namespace: paw
+      status: active
+    - name: Yaak
+      namespace: yaak
+      status: active
+    - name: Apidog
+      namespace: apidog
+      status: active
+
+  resources:
+    - name: requests
+      description: Individual HTTP, GraphQL, gRPC, or WebSocket requests authored inside an API client
+      actions:
+        - create
+        - get
+        - list
+        - update
+        - delete
+        - send
+    - name: collections
+      description: Named, ordered groupings of requests that capture how an API is intended to be exercised
+      actions:
+        - create
+        - get
+        - list
+        - update
+        - delete
+        - run
+        - import
+        - export
+    - name: environments
+      description: Named sets of variables (baseUrl, tokens, IDs) substituted into requests at send time
+      actions:
+        - create
+        - get
+        - list
+        - update
+        - delete
+    - name: history
+      description: Persistent record of past requests and responses recorded by the client
+      actions:
+        - list
+        - get
+        - delete
+    - name: mocks
+      description: Mock servers generated from collections or specs that respond with example data
+      actions:
+        - create
+        - get
+        - list
+        - delete
+
+  actions:
+    - name: send
+      description: Execute a single request and capture the response
+      httpMethod: POST
+      pattern: invoke
+    - name: run
+      description: Execute every request in a collection in order, optionally with assertions
+      httpMethod: POST
+      pattern: invoke
+    - name: import
+      description: Load a collection, OpenAPI spec, HAR file, or cURL string into the client
+      httpMethod: POST
+      pattern: write
+    - name: export
+      description: Serialize a collection back out to a portable format
+      httpMethod: GET
+      pattern: read
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new resource
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+
+  schemas:
+    core:
+      - name: HTTPRequest
+        description: A single HTTP request authored inside an API client
+        properties:
+          - name
+          - method
+          - url
+          - headers
+          - query
+          - body
+          - auth
+          - protocol
+          - tests
+          - client
+      - name: Collection
+        description: A named, ordered group of requests stored by an API client
+        properties:
+          - name
+          - description
+          - client
+          - specVersion
+          - auth
+          - variables
+          - requests
+          - folders
+          - exportedFrom
+          - tags
+
+  enums:
+    http_methods:
+      - GET
+      - POST
+      - PUT
+      - PATCH
+      - DELETE
+      - HEAD
+      - OPTIONS
+      - TRACE
+    body_modes:
+      - none
+      - raw
+      - json
+      - form-data
+      - urlencoded
+      - binary
+      - graphql
+    auth_types:
+      - none
+      - bearer
+      - apikey
+      - basic
+      - digest
+      - oauth2
+      - aws-sigv4
+      - ntlm
+      - hawk
+    protocols:
+      - http
+      - https
+      - graphql
+      - grpc
+      - websocket
+      - sse
+      - mqtt
+      - soap
+    clients:
+      - postman
+      - insomnia
+      - bruno
+      - hoppscotch
+      - httpie
+      - paw
+      - yaak
+      - thunder-client
+      - apidog
+      - readyapi
+      - scalar
+      - rapidapi
+      - stoplight
+      - firecamp
+      - kreya
+      - hurl
+      - restfox
+      - voiden
+
+capability:
+  workflows:
+    - name: Exploring a Third-Party API
+      description: Send the first set of requests against a new API, inspect responses, and learn its shape
+      apis:
+        - postman
+        - insomnia
+        - httpie
+      personas:
+        - API Consumer
+      domains:
+        - Request Building
+    - name: Debugging a Failing Integration
+      description: Replay a failing request, tweak headers and payloads, and isolate the root cause
+      apis:
+        - bruno
+        - paw
+        - yaak
+      personas:
+        - Integration Developer
+      domains:
+        - Debugging
+    - name: Collection-Driven Contract Testing
+      description: Run a collection of requests with assertions in CI to verify an API's contract
+      apis:
+        - postman
+        - hurl
+        - apidog
+      personas:
+        - QA Engineer
+      domains:
+        - Testing
+    - name: Local Mocking for Frontend
+      description: Generate a mock server from a collection or spec so the UI can develop independently
+      apis:
+        - postman
+        - microcks
+        - apidog
+      personas:
+        - Frontend Developer
+      domains:
+        - Mocking
+
+  personas:
+    - id: api-consumer
+      name: API Consumer
+      description: Developers integrating a third-party API into their application
+      workflows:
+        - Exploring a Third-Party API
+    - id: integration-developer
+      name: Integration Developer
+      description: Engineers maintaining production integrations between systems
+      workflows:
+        - Debugging a Failing Integration
+    - id: qa-engineer
+      name: QA Engineer
+      description: Quality engineers running collection-based test suites against APIs
+      workflows:
+        - Collection-Driven Contract Testing
+    - id: frontend-developer
+      name: Frontend Developer
+      description: UI engineers building against mock APIs ahead of backend readiness
+      workflows:
+        - Local Mocking for Frontend
+
+  domains:
+    - name: Request Building
+      description: Composing, parameterizing, and sending individual HTTP, GraphQL, and gRPC requests
+    - name: Debugging
+      description: Inspecting, replaying, and diffing requests and responses to isolate integration faults
+    - name: Testing
+      description: Turning collections of requests into runnable assertions that gate releases
+    - name: Mocking
+      description: Serving recorded or generated responses for collaborative development
+
+crossReference:
+  - resource: requests
+    operations:
+      - create
+      - send
+      - get
+    workflows:
+      - Exploring a Third-Party API
+      - Debugging a Failing Integration
+    personas:
+      - API Consumer
+      - Integration Developer
+  - resource: collections
+    operations:
+      - run
+      - import
+      - export
+    workflows:
+      - Collection-Driven Contract Testing
+    personas:
+      - QA Engineer
+  - resource: mocks
+    operations:
+      - create
+      - get
+    workflows:
+      - Local Mocking for Frontend
+    personas:
+      - Frontend Developer

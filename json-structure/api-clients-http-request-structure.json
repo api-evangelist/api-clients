@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/api-clients/refs/heads/main/json-structure/api-clients-http-request-structure.json",
+  "name": "HTTPRequest",
+  "description": "A single HTTP request as represented inside an API client tool such as Postman, Insomnia, Bruno, or Hoppscotch. Captures method, URL, headers, query parameters, body, authentication, and client-specific metadata needed to replay the request.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the request within a collection.",
+      "example": "req_8f3a2c1d-list-users"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name for the request as shown in the client UI.",
+      "example": "List Users"
+    },
+    "method": {
+      "type": "string",
+      "description": "HTTP method of the request.",
+      "enum": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "HEAD",
+        "OPTIONS",
+        "TRACE"
+      ],
+      "example": "GET"
+    },
+    "url": {
+      "type": "uri",
+      "description": "Full request URL with variable placeholders expanded against the active environment.",
+      "example": "https://api.example.com/v1/users"
+    },
+    "headers": {
+      "type": "array",
+      "description": "Ordered list of HTTP request headers.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "Accept" },
+          "value": { "type": "string", "example": "application/json" },
+          "disabled": { "type": "boolean", "example": false }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      }
+    },
+    "query": {
+      "type": "array",
+      "description": "Query string parameters appended to the URL.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "limit" },
+          "value": { "type": "string", "example": "25" },
+          "disabled": { "type": "boolean", "example": false }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      }
+    },
+    "body": {
+      "type": "object",
+      "description": "Request body, with mode indicating how the client should serialize it.",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "none",
+            "raw",
+            "json",
+            "form-data",
+            "urlencoded",
+            "binary",
+            "graphql"
+          ],
+          "example": "json"
+        },
+        "raw": { "type": "string", "example": "{\"name\":\"Jane\"}" },
+        "mediaType": { "type": "string", "example": "application/json" }
+      }
+    },
+    "auth": {
+      "type": "object",
+      "description": "Authentication configuration applied to the request.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "none",
+            "inherit",
+            "bearer",
+            "apikey",
+            "basic",
+            "digest",
+            "oauth2",
+            "aws-sigv4",
+            "ntlm",
+            "hawk"
+          ],
+          "example": "bearer"
+        }
+      }
+    },
+    "protocol": {
+      "type": "string",
+      "description": "Wire protocol for the request. Most clients support more than plain HTTP/REST.",
+      "enum": [
+        "http",
+        "https",
+        "graphql",
+        "grpc",
+        "websocket",
+        "sse",
+        "mqtt",
+        "soap"
+      ],
+      "example": "https"
+    },
+    "tests": {
+      "type": "array",
+      "description": "Assertions or scripts executed against the response after the request runs.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "status is 200" },
+          "script": { "type": "string", "example": "pm.test('200', () => pm.response.to.have.status(200));" },
+          "language": {
+            "type": "string",
+            "enum": [
+              "javascript",
+              "python",
+              "lua",
+              "hurl",
+              "yaml"
+            ],
+            "example": "javascript"
+          }
+        }
+      }
+    },
+    "client": {
+      "type": "string",
+      "description": "API client tool that produced this request representation.",
+      "example": "postman"
+    }
+  },
+  "required": [
+    "name",
+    "method",
+    "url"
+  ]
+}

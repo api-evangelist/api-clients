@@ -1,0 +1,54 @@
+{
+  "id": "col_users-api-v1",
+  "name": "Users API v1",
+  "description": "End-to-end requests for the Users API including CRUD, search, and bulk operations.",
+  "client": "postman",
+  "specVersion": "2.1.0",
+  "auth": {
+    "type": "bearer"
+  },
+  "variables": [
+    { "name": "baseUrl", "value": "https://api.example.com", "secret": false },
+    { "name": "accessToken", "value": "", "secret": true }
+  ],
+  "requests": [
+    {
+      "id": "req_list-users",
+      "name": "List Users",
+      "method": "GET",
+      "url": "{{baseUrl}}/v1/users"
+    },
+    {
+      "id": "req_create-user",
+      "name": "Create User",
+      "method": "POST",
+      "url": "{{baseUrl}}/v1/users"
+    },
+    {
+      "id": "req_get-user",
+      "name": "Get User",
+      "method": "GET",
+      "url": "{{baseUrl}}/v1/users/{{userId}}"
+    },
+    {
+      "id": "req_update-user",
+      "name": "Update User",
+      "method": "PATCH",
+      "url": "{{baseUrl}}/v1/users/{{userId}}"
+    },
+    {
+      "id": "req_delete-user",
+      "name": "Delete User",
+      "method": "DELETE",
+      "url": "{{baseUrl}}/v1/users/{{userId}}"
+    }
+  ],
+  "folders": [
+    {
+      "name": "CRUD",
+      "requestIds": ["req_list-users", "req_create-user", "req_get-user", "req_update-user", "req_delete-user"]
+    }
+  ],
+  "exportedFrom": "openapi",
+  "tags": ["Users", "v1", "Internal"]
+}

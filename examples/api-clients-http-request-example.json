@@ -1,0 +1,37 @@
+{
+  "id": "req_8f3a2c1d-list-users",
+  "name": "List Users",
+  "method": "GET",
+  "url": "https://api.example.com/v1/users",
+  "headers": [
+    { "name": "Accept", "value": "application/json", "disabled": false },
+    { "name": "Authorization", "value": "Bearer {{accessToken}}", "disabled": false }
+  ],
+  "query": [
+    { "name": "limit", "value": "25", "disabled": false },
+    { "name": "status", "value": "active", "disabled": false }
+  ],
+  "body": {
+    "mode": "none"
+  },
+  "auth": {
+    "type": "bearer",
+    "credentials": {
+      "token": "{{accessToken}}"
+    }
+  },
+  "protocol": "https",
+  "tests": [
+    {
+      "name": "status is 200",
+      "script": "pm.test('200', () => pm.response.to.have.status(200));",
+      "language": "javascript"
+    },
+    {
+      "name": "response is array",
+      "script": "pm.test('array', () => pm.expect(pm.response.json()).to.be.an('array'));",
+      "language": "javascript"
+    }
+  ],
+  "client": "postman"
+}

@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/api-clients/refs/heads/main/json-structure/api-clients-collection-structure.json",
+  "name": "Collection",
+  "description": "A named, ordered group of HTTP requests as stored by an API client (Postman Collection, Insomnia workspace, Bruno folder, Hoppscotch collection). Collections capture the intended way to exercise an API and travel between environments, repos, and team members.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Identifier of the collection inside the client.",
+      "example": "col_users-api-v1"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the collection.",
+      "example": "Users API v1"
+    },
+    "description": {
+      "type": "string",
+      "description": "Markdown description summarizing what the collection covers.",
+      "example": "End-to-end requests for the Users API including CRUD, search, and bulk operations."
+    },
+    "client": {
+      "type": "string",
+      "description": "API client that owns the canonical format of this collection.",
+      "enum": [
+        "postman",
+        "insomnia",
+        "bruno",
+        "hoppscotch",
+        "httpie",
+        "paw",
+        "yaak",
+        "thunder-client",
+        "apidog",
+        "readyapi",
+        "scalar",
+        "rapidapi",
+        "stoplight",
+        "firecamp",
+        "kreya",
+        "hurl",
+        "restfox",
+        "voiden",
+        "other"
+      ],
+      "example": "postman"
+    },
+    "specVersion": {
+      "type": "string",
+      "description": "Version of the client-native collection format (e.g. Postman Collection Format v2.1).",
+      "example": "2.1.0"
+    },
+    "auth": {
+      "type": "object",
+      "description": "Collection-level authentication that requests inherit by default.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "none",
+            "bearer",
+            "apikey",
+            "basic",
+            "oauth2",
+            "aws-sigv4"
+          ],
+          "example": "bearer"
+        }
+      }
+    },
+    "variables": {
+      "type": "array",
+      "description": "Collection-scoped variables available to all requests.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "baseUrl" },
+          "value": { "type": "string", "example": "https://api.example.com" },
+          "secret": { "type": "boolean", "example": false }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    "requests": {
+      "type": "array",
+      "description": "Requests contained in the collection. Each item should validate against the HTTPRequest structure.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "example": "req_list-users" },
+          "name": { "type": "string", "example": "List Users" },
+          "method": { "type": "string", "example": "GET" },
+          "url": { "type": "uri", "example": "{{baseUrl}}/v1/users" }
+        },
+        "required": [
+          "name",
+          "method",
+          "url"
+        ]
+      }
+    },
+    "folders": {
+      "type": "array",
+      "description": "Optional nested folder grouping inside the collection.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "Admin" },
+          "requestIds": {
+            "type": "array",
+            "items": { "type": "string" },
+            "example": [
+              "req_promote-user",
+              "req_disable-user"
+            ]
+          }
+        }
+      }
+    },
+    "exportedFrom": {
+      "type": "string",
+      "description": "Source spec the collection was generated from, if any.",
+      "enum": [
+        "openapi",
+        "asyncapi",
+        "graphql-sdl",
+        "raml",
+        "hand-authored",
+        "har",
+        "other"
+      ],
+      "example": "openapi"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags categorizing the collection.",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "Users",
+        "v1",
+        "Internal"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "client",
+    "requests"
+  ]
+}
