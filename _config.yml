@@ -1,0 +1,23 @@
+title: API Clients
+description: An index and topic collection covering API clients, the developer tools
+  used to inspect, debug, exercise, and document APIs interactively. API clients include
+  desktop and web applications such as Postman, Insomnia, Bruno, Hoppscotch, HTTPie,
+  Paw, Yaak, Thunder Client, and Apidog, along with command-line HTTP clients and
+  language-specific HTTP libraries presented as products. These tools sit between
+  developers and APIs, providing request building, response inspection, collection
+  management, environment variables, scripting, mocking, and team collaboration features
+  that accelerate every stage of the API consumption and integration lifecycle.
+url: https://api-clients.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary

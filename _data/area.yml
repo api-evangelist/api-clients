@@ -1,0 +1,227 @@
+meta:
+  name: API Clients
+  description: An index and topic collection covering API clients, the developer tools
+    used to inspect, debug, exercise, and document APIs interactively. API clients
+    include desktop and web applications such as Postman, Insomnia, Bruno, Hoppscotch,
+    HTTPie, Paw, Yaak, Thunder Client, and Apidog, along with command-line HTTP clients
+    and language-specific HTTP libraries presented as products. These tools sit between
+    developers and APIs, providing request building, response inspection, collection
+    management, environment variables, scripting, mocking, and team collaboration
+    features that accelerate every stage of the API consumption and integration lifecycle.
+  tags:
+  - API Client
+  - HTTP Client
+  - API Debugging
+  - Developer Tools
+  - REST Client
+  - API Testing
+  portal: https://apievangelist.com
+  github: https://github.com/api-evangelist
+  repo: api-clients
+services_tools:
+- name: API Dash
+  repo: https://github.com/api-evangelist/api-dash
+  apisio: https://providers.apis.io/providers/api-dash/
+- name: Apidog
+  repo: https://github.com/api-evangelist/apidog
+  apisio: https://providers.apis.io/providers/apidog/
+- name: Axios
+  repo: https://github.com/api-evangelist/axios
+  apisio: https://providers.apis.io/providers/axios/
+- name: Bruno
+  repo: https://github.com/api-evangelist/bruno
+  apisio: https://providers.apis.io/providers/bruno/
+- name: Charles Proxy
+  repo: https://github.com/api-evangelist/charles-proxy
+  apisio: https://providers.apis.io/providers/charles-proxy/
+- name: cURL
+  repo: https://github.com/api-evangelist/curl
+  apisio: https://providers.apis.io/providers/curl/
+- name: Fiddler
+  repo: https://github.com/api-evangelist/fiddler
+  apisio: https://providers.apis.io/providers/fiddler/
+- name: Firecamp
+  repo: https://github.com/api-evangelist/firecamp
+  apisio: https://providers.apis.io/providers/firecamp/
+- name: Got
+  repo: https://github.com/api-evangelist/got
+  apisio: https://providers.apis.io/providers/got/
+- name: Hoppscotch
+  repo: https://github.com/api-evangelist/hoppscotch
+  apisio: https://providers.apis.io/providers/hoppscotch/
+- name: HTTP Client
+  repo: https://github.com/api-evangelist/http-client
+  apisio: https://providers.apis.io/providers/http-client/
+- name: HTTPie
+  repo: https://github.com/api-evangelist/httpie
+  apisio: https://providers.apis.io/providers/httpie/
+- name: HTTPX
+  repo: https://github.com/api-evangelist/httpx
+  apisio: https://providers.apis.io/providers/httpx/
+- name: Hurl
+  repo: https://github.com/api-evangelist/hurl
+  apisio: https://providers.apis.io/providers/hurl/
+- name: Insomnia
+  repo: https://github.com/api-evangelist/insomnia
+  apisio: https://providers.apis.io/providers/insomnia/
+- name: Kreya
+  repo: https://github.com/api-evangelist/kreya
+  apisio: https://providers.apis.io/providers/kreya/
+- name: Microcks
+  repo: https://github.com/api-evangelist/microcks
+  apisio: https://providers.apis.io/providers/microcks/
+- name: Milkman
+  repo: https://github.com/api-evangelist/milkman
+  apisio: https://providers.apis.io/providers/milkman/
+- name: Mitmproxy
+  repo: https://github.com/api-evangelist/mitmproxy
+  apisio: https://providers.apis.io/providers/mitmproxy/
+- name: Nightingale
+  repo: https://github.com/api-evangelist/nightingale
+  apisio: https://providers.apis.io/providers/nightingale/
+- name: Node-Fetch
+  repo: https://github.com/api-evangelist/node-fetch
+  apisio: https://providers.apis.io/providers/node-fetch/
+- name: OkHttp
+  repo: https://github.com/api-evangelist/okhttp
+  apisio: https://providers.apis.io/providers/okhttp/
+- name: Paw
+  repo: https://github.com/api-evangelist/paw
+  apisio: https://providers.apis.io/providers/paw/
+- name: Postman
+  repo: https://github.com/api-evangelist/postman
+  apisio: https://providers.apis.io/providers/postman/
+- name: RapidAPI
+  repo: https://github.com/api-evangelist/rapidapi
+  apisio: https://providers.apis.io/providers/rapidapi/
+- name: ReadyAPI
+  repo: https://github.com/api-evangelist/readyapi
+  apisio: https://providers.apis.io/providers/readyapi/
+- name: ReqBin
+  repo: https://github.com/api-evangelist/reqbin
+  apisio: https://providers.apis.io/providers/reqbin/
+- name: Requests
+  repo: https://github.com/api-evangelist/requests
+  apisio: https://providers.apis.io/providers/requests/
+- name: REST Assured
+  repo: https://github.com/api-evangelist/rest-assured
+  apisio: https://providers.apis.io/providers/rest-assured/
+- name: REST Client
+  repo: https://github.com/api-evangelist/rest-client
+  apisio: https://providers.apis.io/providers/rest-client/
+- name: RestSharp
+  repo: https://github.com/api-evangelist/restsharp
+  apisio: https://providers.apis.io/providers/restsharp/
+- name: Restfox
+  repo: https://github.com/api-evangelist/restfox
+  apisio: https://providers.apis.io/providers/restfox/
+- name: Retrofit
+  repo: https://github.com/api-evangelist/retrofit
+  apisio: https://providers.apis.io/providers/retrofit/
+- name: Scalar
+  repo: https://github.com/api-evangelist/scalar
+  apisio: https://providers.apis.io/providers/scalar/
+- name: Step CI
+  repo: https://github.com/api-evangelist/step-ci
+  apisio: https://providers.apis.io/providers/step-ci/
+- name: Stoplight
+  repo: https://github.com/api-evangelist/stoplight
+  apisio: https://providers.apis.io/providers/stoplight/
+- name: Thunder Client
+  repo: https://github.com/api-evangelist/thunder-client
+  apisio: https://providers.apis.io/providers/thunder-client/
+- name: Voiden
+  repo: https://github.com/api-evangelist/voiden
+  apisio: https://providers.apis.io/providers/voiden/
+- name: Wget
+  repo: https://github.com/api-evangelist/wget
+  apisio: https://providers.apis.io/providers/wget/
+- name: Xh
+  repo: https://github.com/api-evangelist/xh
+  apisio: https://providers.apis.io/providers/xh/
+- name: Yaak
+  repo: https://github.com/api-evangelist/yaak
+  apisio: https://providers.apis.io/providers/yaak/
+features:
+- name: Interactive Request Building
+  description: API clients provide visual editors for composing HTTP requests with
+    methods, URLs, headers, query parameters, and request bodies, removing the friction
+    of hand-crafting requests in code.
+- name: Response Inspection and Pretty-Printing
+  description: Clients render JSON, XML, HTML, image, and binary responses with syntax
+    highlighting, formatting, and inspection tools that make debugging and exploration
+    far faster than raw output.
+- name: Collections and Workspaces
+  description: Tools like Postman, Insomnia, and Bruno organize requests into named
+    collections and shared workspaces that capture how an API is intended to be exercised
+    end-to-end.
+- name: Environments and Variables
+  description: API clients let developers parameterize requests across environments
+    (dev, staging, prod) using variable substitution, secret stores, and dynamic value
+    providers.
+- name: Authentication Flows
+  description: Built-in support for Bearer tokens, API keys, Basic auth, OAuth 2.0
+    with PKCE, AWS SigV4, and other auth mechanisms removes the need to script authentication
+    by hand.
+- name: Scripting, Assertions, and Testing
+  description: Pre-request and post-response scripting hooks combined with assertions
+    turn ad-hoc requests into runnable, repeatable test suites that can be executed
+    in CI.
+- name: Mocking and Local Development
+  description: Many clients can publish mock servers from collections or specs, letting
+    frontend and consumer teams build against a stable contract before the real API
+    is ready.
+- name: Specification Import and Sync
+  description: API clients import OpenAPI, AsyncAPI, GraphQL SDL, and Postman Collection
+    formats so request libraries stay in sync with the API source of truth.
+use_cases:
+- name: Exploring a Third-Party API
+  description: Developers use Postman, Insomnia, or HTTPie to send their first requests
+    against a new third-party API, inspect responses, and understand its behavior
+    before writing integration code.
+- name: Debugging a Failing Integration
+  description: When a production integration fails, developers replay the failing
+    request in a client like Bruno or Paw, tweak headers and payloads, and isolate
+    the root cause without redeploying code.
+- name: Building Reusable Request Collections
+  description: Teams curate shared collections of API requests in Postman or Insomnia
+    workspaces so engineers, support staff, and QA can run common operations consistently.
+- name: Local Mocking for Frontend Development
+  description: Frontend teams generate mock servers from API collections or specs
+    so they can develop UI against realistic responses before the backend is finished.
+- name: API Contract Testing in CI
+  description: Tools like Hurl, Step CI, and Postman's Newman run collections of requests
+    with assertions as part of CI pipelines to catch regressions against contracts.
+- name: gRPC and GraphQL Exploration
+  description: Clients like Kreya, Yaak, and Insomnia provide first-class support
+    for gRPC reflection and GraphQL introspection so developers can explore non-REST
+    APIs interactively.
+- name: Reverse-Engineering and Traffic Capture
+  description: Tools like mitmproxy, Charles Proxy, and Fiddler capture live HTTP
+    traffic from mobile apps, browsers, or services to understand undocumented or
+    third-party APIs.
+integrations:
+- name: Postman
+  description: The most widely adopted API client and platform with collections, environments,
+    mock servers, monitors, and team workspaces serving millions of developers.
+- name: Insomnia
+  description: Open-source desktop API client from Kong supporting REST, GraphQL,
+    gRPC, and WebSocket with a strong focus on simplicity and design workflows.
+- name: Bruno
+  description: Open-source, file-based, offline-first API client that stores collections
+    as plain text files in your git repository, making collections diffable and reviewable.
+- name: Hoppscotch
+  description: Open-source web-based API client supporting REST, GraphQL, WebSocket,
+    SSE, and MQTT with no install required.
+- name: HTTPie
+  description: Human-friendly command-line HTTP client with intuitive syntax, JSON
+    support, and a desktop GUI counterpart for terminal-first developers.
+- name: Paw
+  description: Native macOS API client (now part of RapidAPI) with deep macOS integration,
+    advanced dynamic values, and code-generation across many languages.
+- name: Yaak
+  description: Modern open-source desktop client supporting REST, GraphQL, and gRPC
+    with a focus on local-first data and offline workflows.
+- name: Apidog
+  description: All-in-one platform combining API design, debugging, mocking, and automated
+    testing in a single workspace, often positioned as a Postman alternative.
