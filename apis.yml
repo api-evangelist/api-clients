@@ -3,7 +3,7 @@ name: API Clients
 description: >-
   An index and topic collection covering API clients, the developer tools used to inspect, debug, exercise, and document APIs interactively. API clients include desktop and web applications such as Postman, Insomnia, Bruno, Hoppscotch, HTTPie, Paw, Yaak, Thunder Client, and Apidog, along with command-line HTTP clients and language-specific HTTP libraries presented as products. These tools sit between developers and APIs, providing request building, response inspection, collection management, environment variables, scripting, mocking, and team collaboration features that accelerate every stage of the API consumption and integration lifecycle.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - API Client
 - HTTP Client
