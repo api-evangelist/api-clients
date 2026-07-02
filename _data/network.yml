@@ -1,0 +1,31 @@
+related:
+- name: Clients
+  url: https://clients.apievangelist.com
+  icon: https://clients.apievangelist.com/icon.png
+  description: This is the index of API client, HTTP client, and API consumer tools repos being tracked
+    by the API Evangelist network. The collection includes command-line HTTP clients, GUI…
+- name: Command Line Interface
+  url: https://cli.apievangelist.com
+  icon: https://cli.apievangelist.com/icon.png
+  description: A curated index of services, tooling, and open source solutions for API command line interfaces,
+    HTTP clients, and terminal-based API tools. This collection covers HTTP clients,…
+- name: IDE
+  url: https://ide.apievangelist.com
+  icon: https://ide.apievangelist.com/icon.png
+  description: An index and topic collection covering integrated development environments (IDEs), code
+    editors, and cloud workspaces with APIs. This topic captures the editors, IDEs, and…
+- name: Testing
+  url: https://testing.apievangelist.com
+  icon: https://testing.apievangelist.com/icon.png
+  description: A curated index of services, tooling, and open source solutions for API testing, mocking,
+    load testing, contract testing, and quality assurance. This collection covers functional…
+- name: SDKs
+  url: https://sdk.apievangelist.com
+  icon: https://sdk.apievangelist.com/icon.png
+  description: A curated index of services, tooling, and open source solutions for generating API SDKs,
+    client libraries, and code from API specifications. This collection covers SDK generation…
+- name: Portal
+  url: https://portal.apievangelist.com
+  icon: https://portal.apievangelist.com/icon.png
+  description: A curated index of services, tooling, and open source solutions for API developer portals,
+    API catalogs, API marketplaces, and developer experience platforms. This collection…
