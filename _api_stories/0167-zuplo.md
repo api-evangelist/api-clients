@@ -1,7 +1,7 @@
 ---
-title: 'MCP Gateway Comparison: 10 Tools for Governing AI Agent Access'
-link: https://zuplo.com/blog/mcp-gateway-comparison
-published: '2026-06-02'
+title: Expose Internal APIs as Governed MCP Tools
+link: https://zuplo.com/blog/expose-internal-apis-as-mcp-tools/
+published: '2026-06-17'
 provider: zuplo
 repo: https://github.com/api-evangelist/zuplo
 domain: zuplo.com
