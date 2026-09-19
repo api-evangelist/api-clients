@@ -1,7 +1,7 @@
 ---
-title: Rate Limiting and API Monetization Through the Developer Portal
-link: https://zuplo.com//blog/rate-limit-and-monetize-with-dev-portal
-published: '2026-05-15'
+title: 'MCP Gateway Comparison: 10 Tools for Governing AI Agent Access'
+link: https://zuplo.com//blog/mcp-gateway-comparison
+published: '2026-06-02'
 provider: zuplo
 repo: https://github.com/api-evangelist/zuplo
 domain: zuplo.com
