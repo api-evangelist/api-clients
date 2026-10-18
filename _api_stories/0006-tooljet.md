@@ -1,7 +1,7 @@
 ---
-title: Build a Hiring Inbox Sorter App with ToolJet MCP and Jev
-link: https://blog.tooljet.com/hiring-inbox-sorter-app/
-published: '2026-10-09'
+title: Build a Damage Triage Console With ToolJet MCP for Depot Teams
+link: https://blog.tooljet.com/damage-triage-console-app/
+published: '2026-10-16'
 provider: tooljet
 repo: https://github.com/api-evangelist/tooljet
 domain: blog.tooljet.com
