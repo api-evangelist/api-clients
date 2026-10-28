@@ -1,120 +1,97 @@
-# API Clients (api-clients)
+# API Clients
+
+<!-- API-EVANGELIST-PROVENANCE:BEGIN -->
+> ### About this repository
+>
+> **This is not our API.** This repository is an independent, third-party profile of a company's
+> **publicly available** API surface, maintained by [API Evangelist](https://apievangelist.com).
+> API Evangelist does not operate, host, resell, or support this company's APIs, and is not
+> affiliated with or endorsed by the company unless stated on the profile.
+>
+> **Where the information came from.** Everything here is assembled from material a member of the
+> public can reach with a browser and no credentials — the company's own website, developer portal
+> and documentation, the specifications it publishes for public use (OpenAPI, AsyncAPI, JSON Schema,
+> `apis.json`, `llms.txt` and similar), its public repositories, and its public status, pricing and
+> changelog pages. **Nothing here is obtained by breaching a system, defeating an access control, or
+> using credentials of any kind.**
+>
+> **The rating is an independent assessment.** The Kin Score and Agent Readiness rating are
+> independently calculated scores of a company's *public* API artifacts, produced by API Evangelist
+> against a published rubric. They are not certifications, endorsements, security assessments, or
+> audits, and they score published artifacts — not the quality, safety, or security of the software.
+>
+> **Corrections, re-scores, and removal are free.** No partnership, contract, or purchase is
+> required, and you do not need to justify the request.
+>
+> - **Something wrong?** Open an issue on this repository, or email
+>   [info@apievangelist.com](mailto:info@apievangelist.com).
+> - **Published something new?** Ask for a re-score and we will re-run the rating.
+> - **Want the listing taken down?** Say so and we will honor it. The profile is reduced to your
+>   company name, a factual description, and a link to your own site, and the company is recorded as
+>   **unrated** — never scored zero for having asked.
+>
+> **Response times.** Acknowledgement within **one business day**; removal or restriction within
+> **two business days**; corrections and re-scores within **five business days**.
+>
+> **Not from the company, and here with a question?** You are welcome here — we would rather be the
+> front line and point you the right way than have a good report go nowhere. What this repository
+> can answer is narrow, though, so it is worth knowing who you are actually looking for:
+>
+> - **A question about how the API works, an account, billing, or a bug in the service** — that is
+>   the company's own support, not us. We profile this API; we do not operate it and cannot see
+>   your account.
+> - **A bug in an open-source project we only catalog** — file it on that project's own repository.
+>   This has happened with a real and correct bug report that reached us instead of the people who
+>   could fix it, which helped nobody.
+> - **Anything about this listing itself** — the description, the tags, the rating, a missing or
+>   wrong artifact — is ours. Open an issue here.
+> - **Not sure, or something general about API Evangelist or APIs.io** — open an issue on the
+>   [APIs.io Inbox](https://github.com/api-search/inbox) and we will route it.
+>
+> **This repository contains no software, and we will never ask you to download anything.** There is
+> no build, release, installer, or binary here — only text and machine-readable API descriptions, so
+> there is nothing here that can be "corrupt" or need "repairing". Any issue, comment, or email
+> claiming otherwise and offering a download link is not from us and is hostile. Do not follow the
+> link; it is a lure. Report it to GitHub and, if you like, tell us at
+> [info@apievangelist.com](mailto:info@apievangelist.com) so we can take it down.
+>
+> **On a security or compliance team?** Email
+> [info@apievangelist.com](mailto:info@apievangelist.com) with *security* in the subject line and
+> you will get a person, not a form. We will tell you exactly which public URLs this profile was
+> built from so your team can see the same surface we did, and we will take the listing down on
+> request while you work through it.
+>
+> Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
+<!-- API-EVANGELIST-PROVENANCE:END -->
+
 An index and topic collection covering API clients, the developer tools used to inspect, debug, exercise, and document APIs interactively. API clients include desktop and web applications such as Postman, Insomnia, Bruno, Hoppscotch, HTTPie, Paw, Yaak, Thunder Client, and Apidog, along with command-line HTTP clients and language-specific HTTP libraries presented as products. These tools sit between developers and APIs, providing request building, response inspection, collection management, environment variables, scripting, mocking, and team collaboration features that accelerate every stage of the API consumption and integration lifecycle.
 
-**URL:** [https://apievangelist.com](https://apievangelist.com)
+**Areas:** API Client · HTTP Client · API Debugging · Developer Tools · REST Client · API Testing
 
-## Tags:
+## API Clients on APIs.io
 
- - API Client, HTTP Client, API Debugging, Developer Tools, REST Client, API Testing
+Everything profiled for API Clients is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/api-clients/](https://apis.io/providers/api-clients/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-05-19
-- **Modified:** 2026-05-19
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-## Common Properties
+- [GitHub](https://github.com/api-evangelist)
 
-- [Portal](https://apievangelist.com)
-- [GitHubOrganization](https://github.com/api-evangelist)
-- [JSONSchema - HTTP Request Schema](https://raw.githubusercontent.com/api-evangelist/api-clients/refs/heads/main/json-schema/api-clients-http-request-schema.json)
-- [JSONSchema - Collection Schema](https://raw.githubusercontent.com/api-evangelist/api-clients/refs/heads/main/json-schema/api-clients-collection-schema.json)
-- [JSON-LD](https://raw.githubusercontent.com/api-evangelist/api-clients/refs/heads/main/json-ld/api-clients-context.jsonld)
-- [Vocabulary](https://raw.githubusercontent.com/api-evangelist/api-clients/refs/heads/main/vocabulary/api-clients-vocabulary.yaml)
+## API Evangelist rating
 
-## Features
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-| Name | Description |
-|------|-------------|
-| Interactive Request Building | API clients provide visual editors for composing HTTP requests with methods, URLs, headers, query parameters, and request bodies, removing the friction of hand-crafting requests in code. |
-| Response Inspection and Pretty-Printing | Clients render JSON, XML, HTML, image, and binary responses with syntax highlighting, formatting, and inspection tools that make debugging and exploration far faster than raw output. |
-| Collections and Workspaces | Tools like Postman, Insomnia, and Bruno organize requests into named collections and shared workspaces that capture how an API is intended to be exercised end-to-end. |
-| Environments and Variables | API clients let developers parameterize requests across environments (dev, staging, prod) using variable substitution, secret stores, and dynamic value providers. |
-| Authentication Flows | Built-in support for Bearer tokens, API keys, Basic auth, OAuth 2.0 with PKCE, AWS SigV4, and other auth mechanisms removes the need to script authentication by hand. |
-| Scripting, Assertions, and Testing | Pre-request and post-response scripting hooks combined with assertions turn ad-hoc requests into runnable, repeatable test suites that can be executed in CI. |
-| Mocking and Local Development | Many clients can publish mock servers from collections or specs, letting frontend and consumer teams build against a stable contract before the real API is ready. |
-| Specification Import and Sync | API clients import OpenAPI, AsyncAPI, GraphQL SDL, and Postman Collection formats so request libraries stay in sync with the API source of truth. |
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Use Cases
+## How this profile is made
 
-| Name | Description |
-|------|-------------|
-| Exploring a Third-Party API | Developers use Postman, Insomnia, or HTTPie to send their first requests against a new third-party API, inspect responses, and understand its behavior before writing integration code. |
-| Debugging a Failing Integration | When a production integration fails, developers replay the failing request in a client like Bruno or Paw, tweak headers and payloads, and isolate the root cause without redeploying code. |
-| Building Reusable Request Collections | Teams curate shared collections of API requests in Postman or Insomnia workspaces so engineers, support staff, and QA can run common operations consistently. |
-| Local Mocking for Frontend Development | Frontend teams generate mock servers from API collections or specs so they can develop UI against realistic responses before the backend is finished. |
-| API Contract Testing in CI | Tools like Hurl, Step CI, and Postman's Newman run collections of requests with assertions as part of CI pipelines to catch regressions against contracts. |
-| gRPC and GraphQL Exploration | Clients like Kreya, Yaak, and Insomnia provide first-class support for gRPC reflection and GraphQL introspection so developers can explore non-REST APIs interactively. |
-| Reverse-Engineering and Traffic Capture | Tools like mitmproxy, Charles Proxy, and Fiddler capture live HTTP traffic from mobile apps, browsers, or services to understand undocumented or third-party APIs. |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Integrations
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for API Clients: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-| Name | Description |
-|------|-------------|
-| Postman | The most widely adopted API client and platform with collections, environments, mock servers, monitors, and team workspaces serving millions of developers. |
-| Insomnia | Open-source desktop API client from Kong supporting REST, GraphQL, gRPC, and WebSocket with a strong focus on simplicity and design workflows. |
-| Bruno | Open-source, file-based, offline-first API client that stores collections as plain text files in your git repository, making collections diffable and reviewable. |
-| Hoppscotch | Open-source web-based API client supporting REST, GraphQL, WebSocket, SSE, and MQTT with no install required. |
-| HTTPie | Human-friendly command-line HTTP client with intuitive syntax, JSON support, and a desktop GUI counterpart for terminal-first developers. |
-| Paw | Native macOS API client (now part of RapidAPI) with deep macOS integration, advanced dynamic values, and code-generation across many languages. |
-| Yaak | Modern open-source desktop client supporting REST, GraphQL, and gRPC with a focus on local-first data and offline workflows. |
-| Apidog | All-in-one platform combining API design, debugging, mocking, and automated testing in a single workspace, often positioned as a Postman alternative. |
+## Open an issue
 
-## Artifacts
-
-Machine-readable API specifications organized by format.
-
-### JSON Schema
-
-- [HTTP Request Schema](json-schema/api-clients-http-request-schema.json)
-- [Collection Schema](json-schema/api-clients-collection-schema.json)
-
-### JSON Structure
-
-- [HTTP Request Structure](json-structure/api-clients-http-request-structure.json)
-- [Collection Structure](json-structure/api-clients-collection-structure.json)
-
-### JSON-LD
-
-- [API Clients Context](json-ld/api-clients-context.jsonld)
-
-## Vocabulary
-
-- [API Clients Vocabulary](vocabulary/api-clients-vocabulary.yaml) - Unified taxonomy mapping 5 resources, 8 actions, 4 workflows, and 4 personas across API client tools, debugging, collections, and request lifecycle management
-
-## Network
-
-This index references the following API client repositories:
-
-- [API Dash](https://github.com/api-evangelist/api-dash)
-- [Apidog](https://github.com/api-evangelist/apidog)
-- [Axios](https://github.com/api-evangelist/axios)
-- [Bruno](https://github.com/api-evangelist/bruno)
-- [Charles Proxy](https://github.com/api-evangelist/charles-proxy)
-- [cURL](https://github.com/api-evangelist/curl)
-- [Fiddler](https://github.com/api-evangelist/fiddler)
-- [Firecamp](https://github.com/api-evangelist/firecamp)
-- [Hoppscotch](https://github.com/api-evangelist/hoppscotch)
-- [HTTPie](https://github.com/api-evangelist/httpie)
-- [Hurl](https://github.com/api-evangelist/hurl)
-- [Insomnia](https://github.com/api-evangelist/insomnia)
-- [Kreya](https://github.com/api-evangelist/kreya)
-- [Microcks](https://github.com/api-evangelist/microcks)
-- [Mitmproxy](https://github.com/api-evangelist/mitmproxy)
-- [Nightingale](https://github.com/api-evangelist/nightingale)
-- [Paw](https://github.com/api-evangelist/paw)
-- [Postman](https://github.com/api-evangelist/postman)
-- [RapidAPI](https://github.com/api-evangelist/rapidapi)
-- [ReadyAPI](https://github.com/api-evangelist/readyapi)
-- [Restfox](https://github.com/api-evangelist/restfox)
-- [Scalar](https://github.com/api-evangelist/scalar)
-- [Step CI](https://github.com/api-evangelist/step-ci)
-- [Stoplight](https://github.com/api-evangelist/stoplight)
-- [Thunder Client](https://github.com/api-evangelist/thunder-client)
-- [Voiden](https://github.com/api-evangelist/voiden)
-- [Yaak](https://github.com/api-evangelist/yaak)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/api-clients/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
