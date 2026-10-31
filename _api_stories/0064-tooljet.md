@@ -1,7 +1,7 @@
 ---
-title: Build a Contract Obligations Review App with ToolJet MCP
-link: https://blog.tooljet.com/contract-obligations-review-app/
-published: '2026-09-28'
+title: Build an SME Loan Underwriting App with ToolJet MCP and Jev
+link: https://blog.tooljet.com/sme-loan-underwriting-app/
+published: '2026-10-05'
 provider: tooljet
 repo: https://github.com/api-evangelist/tooljet
 domain: blog.tooljet.com
